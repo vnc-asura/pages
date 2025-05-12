@@ -17,20 +17,33 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
     background-color: #84e1ad;
+    min-width: 280px;
 
 }
+
+main {
+    padding: 10px;
+    background-color: white;
+    max-width: 980px;
+    min-width: 280px;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 10px -3px black;
+    line-height: 1.8;
+}
+
 
 header {
     background-image: linear-gradient(180deg, #84e1ad, #175935);
     color: white;
-    box-shadow: 3px 3px 10px -3px black;;
+    box-shadow: 3px 3px 10px -3px black;
 }
 
 header a{
     text-decoration: none;
     font-weight: bold;
     color: #84e1ad;
-    display: inline-block;
     padding: 5px;
 }
 
@@ -54,33 +67,27 @@ header a:active{
 header h1 {
     text-align: center;
     padding: 20px;
-    font-size: 3em;
 }
 
-p{
+header p {
     text-align: center;
-    padding: 15px;
+    padding-block: 20px;
 }
 
-header ul {
+/* header ul {
     list-style: none;
     display: flex;
     gap: 15px;
-}
+} */
+
+/* header li{
+    display: block;
+} */
 
 header nav {
     padding: 10px 10px;
 }
 
-main {
-    background-color: white;
-    max-width: 980px;
-    margin-inline: auto;
-    margin-bottom: 20px;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 3px 3px 10px -3px black;
-    line-height: 1.8;
-}
 
 main h1{
     font: normal bold 2.5em idroid;   
@@ -92,10 +99,27 @@ main h2 {
     background-image: linear-gradient(45deg, #84E1AD, #fff 45%);
     font: normal bold 2em idroid;
     color: #175935;
-    margin: 10px;
     padding: 10px;
     border-radius: 3px;
 }
+
+main p{
+    padding-block: 10px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+main img {
+    display: block;
+    margin-inline: auto;
+    padding-block: 10px;
+
+    @media (width < 450px) {
+    width: 100%;
+    padding: 10px;
+    }
+}
+
 
 p a {
     text-decoration: none;
@@ -123,24 +147,27 @@ p a:active {
     border-radius: 5px;
 }
 
-main p{
-    padding: 10px;
-    text-align: justify;
-    text-indent: 40px;
-}
-
-main img {
-    display: block;
-    margin: auto;
-    padding-block:30px;
-}
 
 
 aside {
     background-color: #C5EBD6;
-    margin: 20px;
     border-radius: 15px;
     box-shadow: 2px 2px 7px -2px black;
+    margin-block:20px ;
+    padding: 10px;
+}
+
+aside ul{
+    columns: 2;
+    list-style-position: inside;
+    @media (width < 660px) {
+        columns: unset;
+    }
+
+}
+
+aside li{
+    padding-inline: 20px;
 }
 
 aside li::marker{
@@ -155,6 +182,7 @@ aside h3{
     background-color: #2FA866;
     padding: 10px;
     border-radius: 15px 15px 0 0;
+    margin:-10px -10px 0 -10px;
 }
 
 footer {
@@ -163,6 +191,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
 
 .video {
     background-color: #175935;
@@ -173,12 +202,6 @@ footer {
     border-radius: 3px;
 }
 
-.c2 {
-    padding-inline:50px;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
 
 .titulo-enfeite {
     color: #f09e33; 
