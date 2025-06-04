@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/estilos/style.css" />
+    <link rel="stylesheet" href="assets/estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="login">
+            <section id="imagem">
+                <!-- Imagem do formulário -->
+            </section>
+            <section id="formulario">
+                <h1>Login</h1>
+
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder trazer configurações no seu ambiente.</p>
+
+                <form action="" method="post" autocomplete="on">
+                    <section class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" autocomplete="email" required maxlength="30" placeholder="Seu email">
+                        <label for="ilogin">Login</label>
+                    </section>
+
+                    <section class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" required minlength="8" maxlength="20" placeholder="Sua senha" />
+                        <label for="isenha">Senha</label>
+                    </section>
+                    <input type="submit">
+                    <a class="butao" href="../index.html">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
+                </form>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
